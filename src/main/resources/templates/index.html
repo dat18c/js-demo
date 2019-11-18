@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../static/myStyle.css" rel="stylesheet"></link>
+    <!--<style>
+        h1 {
+            color: red;
+        }
+        .tal{
+            height: 37px;
+            width: 37px;
+        }
+        #minKnap{
+            color: green;
+        }
+    </style>-->
+</head>
+<body>
+    <h1 id="header1">Javascript Demo</h1>
+    <input type="text">
+    <p id="tekstP">Noget tekst</p>
+    <div id="tekstDiv">mere tekst</div>
+    <img src="https://imgs.xkcd.com/comics/exploits_of_a_mom.png" alt="Trapped in driver's license factory">
+    <button class="tal" id="minKnap" onclick="btnClick()">min knap</button>
+    <form action="/" method="get">
+        <input type="text">
+        <input type="submit">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Kolonne 0
+                </th>
+                <th>
+                    Kolonne 1
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    js_basic
+                </td>
+                <td>
+                    øvelse i at ændre indhold
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    lommeregner
+                </td>
+                <td>
+                    brug af tabel og ændre indhold
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function btnClick(){
+            document.getElementById("header1").innerText = "Javascript Øvelse";
+        }
+        var tekst = document.getElementById("tekstDiv").innerText;
+        document.getElementById("tekstP").innerHTML = "<b>" + tekst + "</b>";
+
+    </script>
+</body>
+</html>
